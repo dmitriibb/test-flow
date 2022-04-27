@@ -43,8 +43,9 @@
 					<tagNameFormat>v@{project.version}</tagNameFormat>
 <!--					<autoVersionSubmodules>true</autoVersionSubmodules>-->
 <!--					<releaseProfiles>releases</releaseProfiles>-->
-					<developmentVersion>${development_version}</developmentVersion>
-					<branchName>release-@{project.version}</branchName>
+					<releaseVersion>${parsedVersion.majorVersion}.${parsedVersion.minorVersion}.{parsedVersion.incrementalVersion}-SNAPSHOT</releaseVersion>
+					<developmentVersion>${parsedVersion.majorVersion}.${parsedVersion.minorVersion}.{parsedVersion.nextIncrementalVersion}</developmentVersion>
+					<branchName>release-${parsedVersion.majorVersion}.${parsedVersion.minorVersion}.{parsedVersion.nextIncrementalVersion}</branchName>
 				</configuration>
 
 			</plugin>
