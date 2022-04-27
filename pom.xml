@@ -44,7 +44,7 @@
 <!--					<autoVersionSubmodules>true</autoVersionSubmodules>-->
 <!--					<releaseProfiles>releases</releaseProfiles>-->
 					<developmentVersion>${development_version}</developmentVersion>
-					<branchName>release-@{project.version}</branchName>
+					<branchName>release-${project.version}</branchName>
 				</configuration>
 
 			</plugin>
