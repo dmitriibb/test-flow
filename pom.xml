@@ -31,6 +31,16 @@
 	<build>
 		<plugins>
 			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>build-helper-maven-plugin</artifactId>
+				<version>3.2.0</version>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>versions-maven-plugin</artifactId>
+				<version>2.8.1</version>
+			</plugin>
+			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
@@ -43,9 +53,9 @@
 					<tagNameFormat>v@{project.version}</tagNameFormat>
 <!--					<autoVersionSubmodules>true</autoVersionSubmodules>-->
 <!--					<releaseProfiles>releases</releaseProfiles>-->
-					<releaseVersion>${parsedVersion.majorVersion}.${parsedVersion.minorVersion}.{parsedVersion.incrementalVersion}-SNAPSHOT</releaseVersion>
-					<developmentVersion>${parsedVersion.majorVersion}.${parsedVersion.minorVersion}.{parsedVersion.nextIncrementalVersion}</developmentVersion>
-					<branchName>release-${parsedVersion.majorVersion}.${parsedVersion.minorVersion}.{parsedVersion.nextIncrementalVersion}</branchName>
+					<releaseVersion>${parsedVersion.majorVersion}.${parsedVersion.minorVersion}.${parsedVersion.incrementalVersion}-SNAPSHOT</releaseVersion>
+					<developmentVersion>${parsedVersion.majorVersion}.${parsedVersion.minorVersion}.${parsedVersion.nextIncrementalVersion}</developmentVersion>
+					<branchName>release-${parsedVersion.majorVersion}.${parsedVersion.minorVersion}.${parsedVersion.nextIncrementalVersion}</branchName>
 				</configuration>
 
 			</plugin>
