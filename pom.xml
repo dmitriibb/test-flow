@@ -56,9 +56,9 @@
 <!--					<releaseVersion>${parsedVersion.majorVersion}.${parsedVersion.minorVersion}.${parsedVersion.incrementalVersion}-SNAPSHOT</releaseVersion>-->
 <!--					<developmentVersion>${parsedVersion.majorVersion}.${parsedVersion.minorVersion}.${parsedVersion.nextIncrementalVersion}</developmentVersion>-->
 <!--					<branchName>release-${parsedVersion.majorVersion}.${parsedVersion.minorVersion}.${parsedVersion.incrementalVersion}</branchName>-->
-						<releaseVersion>${project.version}</releaseVersion>
+						<releaseVersion>{project.version}</releaseVersion>
 						<developmentVersion>${parsedVersion.majorVersion}.${parsedVersion.minorVersion}.${parsedVersion.nextIncrementalVersion}-SNAPSHOT</developmentVersion>
-						<branchName>release-${project.version}</branchName>
+						<branchName>release-{project.version}</branchName>
 				</configuration>
 
 			</plugin>
